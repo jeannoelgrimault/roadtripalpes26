@@ -1,0 +1,27 @@
+PROCEDURE GITHUB PAGES
+
+Je ne peux pas fournir directement l'adresse du site tant que les fichiers ne sont pas hébergés.
+L'adresse sera créée automatiquement par GitHub Pages après dépôt des fichiers.
+
+1. Créer un compte GitHub ou se connecter.
+2. Créer un nouveau dépôt nommé : roadtrip-alpes-2026.
+3. Déposer à la racine tous les fichiers du dossier.
+4. Aller dans Settings puis Pages.
+5. Choisir :
+   Source : Deploy from a branch
+   Branch : main
+   Folder : /root
+6. Cliquer sur Save.
+7. Attendre 1 à 3 minutes.
+
+Adresse obtenue :
+https://TON-IDENTIFIANT-GITHUB.github.io/roadtrip-alpes-2026/
+
+Exemple fictif :
+https://jeannoelgrimault.github.io/roadtrip-alpes-2026/
+
+Installation sur iPhone :
+1. Ouvrir l'adresse dans Safari.
+2. Toucher Partager.
+3. Choisir Ajouter à l'écran d'accueil.
+4. Nommer : Alpes 2026.

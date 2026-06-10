@@ -1,0 +1,52 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2f6f73">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Alpes 2026">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Roadtrip Alpes 2026</title>
+</head>
+<body>
+<header class="hero">
+  <div>
+    <p class="eyebrow">Roadtrip Alpes 2026</p>
+    <h1>Roadbook personnel</h1>
+    <p class="subtitle">Kodiaq PHEV, hôtels, points GPS, budget, dépenses, notes modifiables.</p>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="active" data-tab="roadbook">Roadbook</button>
+  <button data-tab="mapview">Carte</button>
+  <button data-tab="budget">Budget</button>
+  <button data-tab="favorites">Favoris GPS</button>
+    <button data-tab="export">Sauvegarde</button>
+  <button id="print">Imprimer</button>
+</nav>
+
+<main>
+  <section id="stats" class="stats"></section>
+
+  <section id="roadbook" class="view active">
+    <input id="search" class="search" type="search" placeholder="Rechercher : hôtel, ville, GPS, note...">
+    <div id="roadbook-list" class="cards"></div>
+  </section>
+
+  <section id="mapview" class="view"><div class="panel"><h2>Carte du parcours</h2><p id="map-info" class="muted"></p><div id="map"></div></div></section>
+  <section id="budget" class="view"><div id="budget-content"></div></section>
+  <section id="favorites" class="view"><div id="favorites-content"></div></section>
+  <section id="export" class="view"><div id="export-content"></div></section>
+</main>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
