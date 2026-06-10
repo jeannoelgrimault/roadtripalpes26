@@ -42,3 +42,39 @@ details{border-top:1px solid var(--line);margin-top:16px;padding-top:12px}summar
 @media print{.hero,.tabs,.search,details,#budget,#favorites,#checklist,#export{display:none!important}body{background:white}main{padding:0}.stats{display:none}.day-card{box-shadow:none;border:1px solid #aaa;break-after:page;border-radius:0}.day-card:last-child{break-after:auto}input,textarea{border:none;padding:0}}
 
 #map{height:560px;border-radius:16px;border:1px solid var(--line);overflow:hidden} @media(max-width:850px){#map{height:460px}} @media print{#mapview{display:none!important}}
+
+.hotel-link-box{display:grid;gap:6px;color:var(--muted);font-size:.88rem}
+.hotel-link-box a{display:inline-block;color:var(--accent);font-weight:800;text-decoration:none;border:1px solid var(--line);background:#fbfaf7;border-radius:12px;padding:10px}
+.video-stage{display:grid;gap:14px}
+.video-slide{height:460px;border-radius:20px;overflow:hidden;position:relative;background:linear-gradient(135deg,#2f6f73,#1d2429);box-shadow:var(--shadow);transition:background .5s ease}
+.video-slide.route{background:linear-gradient(135deg,#39424e,#b68b5a)}
+.video-slide.lake{background:linear-gradient(135deg,#1f6f8b,#b8e0f0)}
+.video-slide.mountain{background:linear-gradient(135deg,#263238,#d5d0c2)}
+.video-slide.italy{background:linear-gradient(135deg,#0b5963,#d9a441)}
+.video-slide.city{background:linear-gradient(135deg,#5b3a2e,#c58b57)}
+.video-slide.dolomites{background:linear-gradient(135deg,#2f6f73,#d9d2be)}
+.video-slide.peaks{background:linear-gradient(135deg,#202d3a,#eef0e9)}
+.video-slide.swiss{background:linear-gradient(135deg,#7f1d1d,#f2f2f2)}
+.video-slide.morzine{background:linear-gradient(135deg,#31572c,#90a955)}
+.video-slide:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.35),transparent 18%),linear-gradient(150deg,transparent 45%,rgba(255,255,255,.18) 45% 52%,transparent 52%),linear-gradient(28deg,rgba(0,0,0,.2),transparent)}
+.video-overlay{position:absolute;left:0;right:0;bottom:0;padding:34px;color:white;background:linear-gradient(transparent,rgba(0,0,0,.68))}
+.video-overlay h2{font-size:clamp(2rem,5vw,4rem);margin:0;line-height:1}
+.video-overlay h3{font-size:1.4rem;margin:10px 0}.video-overlay p{max-width:720px;font-size:1.05rem}.video-controls{display:flex;gap:10px;flex-wrap:wrap}
+@media(max-width:850px){.video-slide{height:420px}.hotel-link-box{grid-column:auto}}
+@media print{
+  body{background:white!important}
+  .hero,.tabs,.search,details,#mapview,#video,#budget,#favorites,#export{display:none!important}
+  main{padding:0!important}
+  #roadbook{display:block!important}
+  .view{display:block!important}
+  .stats{display:none!important}
+  .cards{display:block!important}
+  .day-card{display:block!important;box-shadow:none!important;border:1px solid #999!important;break-after:page;border-radius:0!important;background:white!important;color:#000!important}
+  .day-card:last-child{break-after:auto}
+  input,textarea{border:none!important;padding:0!important;background:white!important;color:#000!important}
+  .hotel-link-box a{border:none!important;padding:0!important;color:#000!important}
+}
+
+.video-slide{background-size:cover!important;background-position:center!important}
+.video-slide .video-overlay{backdrop-filter: blur(1px)}
+.video-controls .import-label{display:inline-block}
