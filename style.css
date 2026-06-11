@@ -63,7 +63,7 @@ details{border-top:1px solid var(--line);margin-top:16px;padding-top:12px}summar
 @media(max-width:850px){.video-slide{height:420px}.hotel-link-box{grid-column:auto}}
 @media print{
   body{background:white!important}
-  .hero,.tabs,.search,details,#mapview,#video,#budget,#favorites,#export{display:none!important}
+  .hero,.tabs,.search,details,#mapview,#budget,#favorites,#export{display:none!important}
   main{padding:0!important}
   #roadbook{display:block!important}
   .view{display:block!important}
@@ -78,3 +78,7 @@ details{border-top:1px solid var(--line);margin-top:16px;padding-top:12px}summar
 .video-slide{background-size:cover!important;background-position:center!important}
 .video-slide .video-overlay{backdrop-filter: blur(1px)}
 .video-controls .import-label{display:inline-block}
+
+@media print{
+  #video{display:none!important}
+}
